@@ -16,4 +16,12 @@ jobs:
    - run: |
        node -v
        pwd
-
+run-windows-commands:
+  runs-on: windows-latest
+  needs: ["run-shell-commands"]
+  steps:
+    - name: Directory
+    - run: Get-Location
+    - name: Ditector using bash
+      run: pwd
+      shell: bash 
