@@ -2,10 +2,6 @@ name: Terraform
 
 on: [push]
 
-env:
-  AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
-
 jobs:
   terraform:
     runs-on: ubuntu-latest
